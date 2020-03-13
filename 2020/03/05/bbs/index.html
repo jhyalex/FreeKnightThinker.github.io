@@ -1,0 +1,1311 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head>
+  <!-- Google AdSense start -->
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-7635460126258479",
+    enable_page_level_ads: true
+  });
+</script>
+  <!-- Google AdSense end -->
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="FreeKnight" type="application/atom+xml" />
+
+
+
+
+
+
+<meta name="description" content="这个时代，一切流行的东西都会迅速消逝。网络这个初熟的公共政治空间，还在奔跑。不过，回头看看出发的地方，就像在荒烟蔓草的客厅里回忆当年的灯火辉煌。  南方周末曾经有一篇文章叫独立书店和公共空间，提到了书店可以作为一个实体的公共空间，但是就像约翰 P. 巴洛在网络独立宣言)中所说，”我们正在建造的全球社会空间，将自然独立于你们试图强加给我们的专制。”网络公共空间开始兴起。 可惜现实没有像巴洛所设想的">
+<meta name="keywords" content="思想，自由，科学，技术">
+<meta property="og:type" content="article">
+<meta property="og:title" content="BBS和网络公共空间">
+<meta property="og:url" content="https://freeknight.cf/2020/03/05/bbs/index.html">
+<meta property="og:site_name" content="FreeKnight">
+<meta property="og:description" content="这个时代，一切流行的东西都会迅速消逝。网络这个初熟的公共政治空间，还在奔跑。不过，回头看看出发的地方，就像在荒烟蔓草的客厅里回忆当年的灯火辉煌。  南方周末曾经有一篇文章叫独立书店和公共空间，提到了书店可以作为一个实体的公共空间，但是就像约翰 P. 巴洛在网络独立宣言)中所说，”我们正在建造的全球社会空间，将自然独立于你们试图强加给我们的专制。”网络公共空间开始兴起。 可惜现实没有像巴洛所设想的">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/zh/6/6b/Ythtlogin.jpg">
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/zh/thumb/4/41/Smth-20050318-telnet.jpg/300px-Smth-20050318-telnet.jpg">
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/zh/a/ac/Xiaobaihe.JPG">
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/zh/thumb/9/9d/1984bbs.jpg/320px-1984bbs.jpg">
+<meta property="og:updated_time" content="2020-03-12T02:56:26.015Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="BBS和网络公共空间">
+<meta name="twitter:description" content="这个时代，一切流行的东西都会迅速消逝。网络这个初熟的公共政治空间，还在奔跑。不过，回头看看出发的地方，就像在荒烟蔓草的客厅里回忆当年的灯火辉煌。  南方周末曾经有一篇文章叫独立书店和公共空间，提到了书店可以作为一个实体的公共空间，但是就像约翰 P. 巴洛在网络独立宣言)中所说，”我们正在建造的全球社会空间，将自然独立于你们试图强加给我们的专制。”网络公共空间开始兴起。 可惜现实没有像巴洛所设想的">
+<meta name="twitter:image" content="https://upload.wikimedia.org/wikipedia/zh/6/6b/Ythtlogin.jpg">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"hide","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://freeknight.cf/2020/03/05/bbs/"/>
+
+
+
+
+
+  <title>BBS和网络公共空间 | FreeKnight</title>
+  
+
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-117914144-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+<a href="https://github.com/freeknightthinker"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">FreeKnight</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">自由骑士</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://freeknight.cf/2020/03/05/bbs/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="FKT">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/abr.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="FreeKnight">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">BBS和网络公共空间</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-03-05T13:17:25+08:00">
+                2020-03-05
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/技术理念/" itemprop="url" rel="index">
+                    <span itemprop="name">技术理念</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2020/03/05/bbs/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2020/03/05/bbs/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <blockquote>
+<p>这个时代，一切流行的东西都会迅速消逝。网络这个初熟的公共政治空间，还在奔跑。不过，回头看看出发的地方，就像在荒烟蔓草的客厅里回忆当年的灯火辉煌。</p>
+</blockquote>
+<p>南方周末曾经有一篇文章叫<a href="https://www.infzm.com/content/132247" target="_blank" rel="noopener">独立书店和公共空间</a>，提到了书店可以作为一个实体的公共空间，但是就像约翰 P. 巴洛在<a href="[https://zh.wikisource.org/wiki/%E7%BD%91%E7%BB%9C%E7%8B%AC%E7%AB%8B%E5%AE%A3%E8%A8%80](https://zh.wikisource.org/wiki/网络独立宣言">网络独立宣言</a>)中所说，”我们正在建造的全球社会空间，将自然独立于你们试图强加给我们的专制。”网络公共空间开始兴起。</p>
+<p>可惜现实没有像巴洛所设想的那么理想，互联网渐渐让我们失去隐私，一种无形的恐惧依然笼罩着我们。回望中国早期的互联网，特别是前GFW时代或前实名制时代，BBS作为网络公共空间的代表，有必要对其进行一些整理。</p>
+<hr>
+<h3 id="BBS往事"><a href="#BBS往事" class="headerlink" title="BBS往事"></a>BBS往事</h3><p><a href="http://www.numino.net/Service/article/view_article.asp?id=290" target="_blank" rel="noopener">BBS往事—— 一篇写给互联网的情书</a> | <a href="https://web.archive.org/web/20200305143251/http://www.numino.net/Service/article/view_article.asp?id=290" target="_blank" rel="noopener">备份1</a> | <a href="https://web.archive.org/web/20200306024127/https://chuansongme.com/n/406947" target="_blank" rel="noopener">备份2</a></p>
+<p><a href="https://www.zhihu.com/question/21263660" target="_blank" rel="noopener">2005 年时对各个 BBS 推行实名制是怎么回事？</a> | <a href="">备份1</a> | <a href="https://archive.is/47ihg" target="_blank" rel="noopener">备份2</a></p>
+<p><a href="https://www.doubleaf.com/2005/03/22/48" target="_blank" rel="noopener">近期各大高校BBS公告</a> | <a href="https://web.archive.org/web/20200309124048/https://www.doubleaf.com/2005/03/22/48" target="_blank" rel="noopener">备份</a></p>
+<p><a href="https://zh.wikisource.org/zh-hans/%E4%B8%AD%E5%85%B1%E4%B8%AD%E5%A4%AE%E3%80%81%E5%9B%BD%E5%8A%A1%E9%99%A2%E5%85%B3%E4%BA%8E%E8%BF%9B%E4%B8%80%E6%AD%A5%E5%8A%A0%E5%BC%BA%E5%92%8C%E6%94%B9%E8%BF%9B%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%80%9D%E6%83%B3%E6%94%BF%E6%B2%BB%E6%95%99%E8%82%B2%E7%9A%84%E6%84%8F%E8%A7%81" target="_blank" rel="noopener">中共中央、国务院关于进一步加强和改进大学生思想政治教育的意见（2004）</a></p>
+<p><a href="">教育部、共青团中央关于进一步加强高等学<br>校校园网络管理工作的意见 </a> pdf未上传</p>
+<p><a href="http://www.aisixiang.com/data/7896.html" target="_blank" rel="noopener">小呆：网络实名制击溃高校BBS</a> | <a href="https://web.archive.org/web/20200309070057/http://www.aisixiang.com/data/7896.html" target="_blank" rel="noopener">备份</a></p>
+<p><a href="https://web.archive.org/web/20200309080101/http://www.xys.org/xys/netters/others/net/bbs5.txt" target="_blank" rel="noopener">兴盛与危机——BBS的十年精神史</a></p>
+<p><a href="https://www.doubleaf.com/2005/07/27/358" target="_blank" rel="noopener">UCLA亚洲传媒：逝去的高校BBS</a> | <a href="https://web.archive.org/web/20200309125511/https://www.doubleaf.com/2005/07/27/358" target="_blank" rel="noopener">备份</a></p>
+<p><a href="http://www.xys.org/xys/netters/others/net/smth16.txt" target="_blank" rel="noopener">高校BBS“实名制”的前前后后</a> | <a href="http://web.archive.org/web/20200309080156/http://www.xys.org/xys/netters/others/net/smth16.txt" target="_blank" rel="noopener">备份</a></p>
+<p><a href="https://web.archive.org/web/20130212025806/https://cn.wsj.com/gb/20121226/opn071326.asp" target="_blank" rel="noopener">网络实名制立法是一种懒政思维</a></p>
+<p><a href="https://iamsettler.blogspot.com/2005/03/bbstom-blog_29.html" target="_blank" rel="noopener">就校园BBS被整肃致教育部部长周济的公开信</a> | <a href="https://web.archive.org/web/20200309081242/http://www.liu-xiaobo.org/blog/archives/7105" target="_blank" rel="noopener">备份</a></p>
+<p><a href="https://m.ithome.com/html/44304.htm" target="_blank" rel="noopener">BBS拍砖灌水20年，斑竹们的网络江湖</a> | <a href="https://web.archive.org/web/20200307034410/https://m.ithome.com/html/44304.htm" target="_blank" rel="noopener">备份</a></p>
+<h3 id="一塌糊涂BBS"><a href="#一塌糊涂BBS" class="headerlink" title="一塌糊涂BBS"></a>一塌糊涂BBS</h3><blockquote>
+<p>这儿，是你灵魂的延伸。</p>
+</blockquote>
+<p><img src="https://upload.wikimedia.org/wikipedia/zh/6/6b/Ythtlogin.jpg" alt=""></p>
+<p><a href="https://zh.wikipedia.org/zh-hans/%E4%B8%80%E5%A1%8C%E7%B3%8A%E6%B6%82BBS" target="_blank" rel="noopener">维基百科</a> | <a href="https://zh.wikipedia.org/wiki/Talk:%E4%B8%80%E5%A1%8C%E7%B3%8A%E6%B6%82BBS/2004%E5%B9%B410%E6%9C%88%E4%BB%A5%E5%89%8D" target="_blank" rel="noopener">维基上的Talk</a></p>
+<p><a href="https://web.archive.org/web/20040830061008/http://www.ytht.net/" target="_blank" rel="noopener">互联网档案馆存档1</a> | <a href="https://web.archive.org/web/20051128034637/http://www.ytht.net:80/" target="_blank" rel="noopener">存档2</a> | <a href="https://web.archive.org/web/20040727080453/http://www.ytht.net/Ytht.Net/doc?B=734" target="_blank" rel="noopener">存档3</a></p>
+<p><a href="https://www.douban.com/note/130423990/" target="_blank" rel="noopener">一塌糊涂BBS身份验证邮件</a> | <a href="https://web.archive.org/web/20200305120720/https://www.douban.com/note/130423990/" target="_blank" rel="noopener">备份</a></p>
+<p><a href="https://www.ptt.cc/man/YTHT/index.html" target="_blank" rel="noopener">ptt一塌糊涂精华区</a> | <a href="https://www.ptt.cc/bbs/YTHT/M.1095476073.A.316.html" target="_blank" rel="noopener">之一</a></p>
+<p><a href="https://www.doubleaf.com/2004/11/18/16" target="_blank" rel="noopener">YTHT简史</a> | <a href="https://web.archive.org/web/20200305072922/https://www.doubleaf.com/2004/11/18/16" target="_blank" rel="noopener">备份</a></p>
+<p><a href="https://cmcn.blog/2004/09/17/为了永生的纪念-纪念一塌糊涂bbs五周岁生日/" target="_blank" rel="noopener">为了永生的纪念——纪念一塌糊涂bbs五周岁生日</a> | <a href="https://web.archive.org/web/20200305080056/https://cmcn.blog/2004/09/17/%e4%b8%ba%e4%ba%86%e6%b0%b8%e7%94%9f%e7%9a%84%e7%ba%aa%e5%bf%b5-%e7%ba%aa%e5%bf%b5%e4%b8%80%e5%a1%8c%e7%b3%8a%e6%b6%82bbs%e4%ba%94%e5%91%a8%e5%b2%81%e7%94%9f%e6%97%a5/" target="_blank" rel="noopener">备份</a></p>
+<p><a href="http://www.tangrui.net/2005/write-on-the-day-one-year-after-ytht-was-closed.html" target="_blank" rel="noopener">【转载】写在一塌糊涂关站一周年</a> | <a href="https://web.archive.org/web/20200305074038/http://www.tangrui.net/2005/write-on-the-day-one-year-after-ytht-was-closed.html" target="_blank" rel="noopener">备份</a></p>
+<p><a href="https://www.douban.com/note/172207155/" target="_blank" rel="noopener">只是为了记录——写给YTHT关站七周年</a> | <a href="https://web.archive.org/web/20200307022512/https://www.douban.com/note/172207155/" target="_blank" rel="noopener">备份</a></p>
+<p><a href="https://www.45eggs.com/media/copyit/2004/ytht-history.html" target="_blank" rel="noopener">一塌糊涂（YTHT）</a> | <a href="https://web.archive.org/web/20200305084818/https://www.45eggs.com/media/copyit/2004/ytht-history.html" target="_blank" rel="noopener">备份</a></p>
+<p><a href="https://iamsettler.blogspot.com/2005/03/tom-blog_18.html" target="_blank" rel="noopener">一榻胡涂追悼会</a> | <a href="https://archive.is/vn7GE" target="_blank" rel="noopener">备份</a></p>
+<p><a href="https://www.cnblogs.com/sonne/archive/2004/09/15/43333.html" target="_blank" rel="noopener">纪念一塌糊涂BBS</a> | <a href="https://web.archive.org/web/20200305113134/https://www.cnblogs.com/sonne/archive/2004/09/15/43333.html" target="_blank" rel="noopener">备份</a></p>
+<p><a href="http://bbs.tianya.cn/post-develop-290182-2.shtml" target="_blank" rel="noopener">天涯 | 纪念一塌糊涂BBS</a> | <a href="https://web.archive.org/web/20200305114552/http://bbs.tianya.cn/post-develop-290182-1.shtml" target="_blank" rel="noopener">备份</a></p>
+<p><a href="http://bbs.gter.net/thread-182523-1-1.html" target="_blank" rel="noopener">一塌糊涂论战全集：我是北大培养的废物</a> | <a href="https://archive.is/TYDkm" target="_blank" rel="noopener">备份</a></p>
+<p><a href="http://www.bcchinese.net/showpost.aspx?postid=1659" target="_blank" rel="noopener"> “北大”一塌糊涂网站遭关闭</a> | <a href="https://archive.is/qYQAi" target="_blank" rel="noopener">备份</a></p>
+<p><a href="https://froc.blogspot.com/?m=1" target="_blank" rel="noopener">ROC–中国BBS自由之路</a> | <a href="https://web.archive.org/web/20200305080351/https://froc.blogspot.com/?m=1" target="_blank" rel="noopener">备份</a></p>
+<p><a href="https://www.cdsoso.me/page-HpDTdeth.html" target="_blank" rel="noopener">《一塌糊涂BBS.13个版面精华合集》(一塌糊涂)[EXE]</a>（未亲测）</p>
+<p>谁在救中国 pdf</p>
+<hr>
+<p>###水木清华BBS</p>
+<blockquote>
+<p>水木，首先是一种心情，然后是一种生活方式。</p>
+</blockquote>
+<p><img src="https://upload.wikimedia.org/wikipedia/zh/thumb/4/41/Smth-20050318-telnet.jpg/300px-Smth-20050318-telnet.jpg" alt=""></p>
+<p><a href="[https://zh.wikipedia.org/zh-hans/%E6%B0%B4%E6%9C%A8%E6%B8%85%E5%8D%8EBBS](https://zh.wikipedia.org/zh-hans/水木清华BBS">维基百科</a>)</p>
+<p><a href="">互联网档案馆</a> | <a href="https://web.archive.org/web/20050518004139/http://www.smth.edu.cn/announce.html" target="_blank" rel="noopener">存档1</a> | <a href="https://web.archive.org/web/20050514012304/http://www.smth.org/" target="_blank" rel="noopener">存档2</a> | <a href="https://web.archive.org/web/20051124135559/http://www.smth.edu.cn/announce.html" target="_blank" rel="noopener">存档3</a></p>
+<p><a href="https://www.williamlong.info/archives/4880.html" target="_blank" rel="noopener">水木清华站长：水木清华十五年辛酸成败</a> | <a href="https://web.archive.org/web/20200309042141/https://www.williamlong.info/archives/4880.html" target="_blank" rel="noopener">备份</a></p>
+<p><a href="https://web.archive.org/web/20200309055543/https://www.thepaper.cn/newsDetail_forward_4122754" target="_blank" rel="noopener">如果网络社会有镜像宇宙｜埃瑞璜⑩</a></p>
+<p><a href="https://i.youku.com/i/UMjY4NjIzODc2" target="_blank" rel="noopener">水木的第一部故事DV——《爱情，请用 term 登录》</a></p>
+<p><a href="http://smthbbs.blogspot.com/2005/04/post2000.html" target="_blank" rel="noopener">关于2000年水木的另一次罹难(转载)</a> | <a href="https://web.archive.org/web/20200309075307/https://smthbbs.blogspot.com/2005/04/post2000.html" target="_blank" rel="noopener">备份</a></p>
+<p><a href="http://www.tangrui.net/2005/talking-about-crashing-of-smth.html" target="_blank" rel="noopener">【转载】论 SMTH 的倒掉</a> | <a href="https://web.archive.org/web/20200308143156/http://www.tangrui.net/2005/talking-about-crashing-of-smth.html" target="_blank" rel="noopener">备份</a></p>
+<p><a href="https://web.archive.org/web/20060924164712/http://zqb.cyol.com/gb/zqb/2005-03/30/content_1058775.htm" target="_blank" rel="noopener">“活”在BBS</a></p>
+<p><a href="https://web.archive.org/web/20090108181517/http://maomy.motime.com/post/431462" target="_blank" rel="noopener">清华大学师生自发集会图片集</a></p>
+<p><a href="https://web.archive.org/web/20050319101640/http://community.webshots.com/album/298082898zZFJnj" target="_blank" rel="noopener">清华大学师生日晷集会</a></p>
+<p><a href="http://www.flickr.com/photos/zhen/sets/249800/" target="_blank" rel="noopener">3.18清华日晷-奠水木</a> | <a href="https://web.archive.org/web/20200308143407/https://www.flickr.com/photos/zhen/sets/249800/" target="_blank" rel="noopener">备份</a></p>
+<p><a href="https://flickr.com/photos/maomy/sets/168620/show/" target="_blank" rel="noopener">smth dying&amp;newsmth</a> | <a href="https://web.archive.org/web/20200309090851/https://flickr.com/photos/maomy/sets/168620/show/" target="_blank" rel="noopener">备份</a></p>
+<p><a href="https://iamsettler.blogspot.com/2005/03/httpsmthbbscomtom-blog.html" target="_blank" rel="noopener">http://smthbbs.com/签名活动及公开信(@tom blog)</a> | <a href="https://archive.is/r2HZv" target="_blank" rel="noopener">备份</a></p>
+<p><a href="http://ohmymedia.com/2006/03/16/597/" target="_blank" rel="noopener">水木清华BBS转为“校内交流平台”一周年</a> | <a href="https://web.archive.org/web/20200309091950/http://ohmymedia.com/2006/03/16/597/" target="_blank" rel="noopener">备份</a></p>
+<p><a href="https://web.archive.org/web/20080807130349/http://maomy.blogbus.com/logs/2005/03/1066943.html" target="_blank" rel="noopener">水木清华bbs53个版面进版画面截图！</a></p>
+<p><a href="https://iamsettler.blogspot.com/2005/03/bbstom-blog.html" target="_blank" rel="noopener">我泪长流：沉痛悼念清华水木BBS</a> | <a href="https://archive.is/wvJyM" target="_blank" rel="noopener">备份</a></p>
+<p><a href="https://glacierboy.blogspot.com/2005/03/blog-post.html" target="_blank" rel="noopener">纪念水木清华</a> | <a href="https://web.archive.org/web/20200309065125/https://glacierboy.blogspot.com/2005/03/blog-post.html" target="_blank" rel="noopener">备份</a></p>
+<p><a href="https://tsinghuawatch.blogspot.com/2009/03/4.html" target="_blank" rel="noopener">水木“三一六”事件4年纪念</a> | <a href="https://web.archive.org/web/20200309032751/https://tsinghuawatch.blogspot.com/2009/03/4.html" target="_blank" rel="noopener">备份</a></p>
+<p><a href="https://younggift.net/2013/03/15/blog-post_15-2/" target="_blank" rel="noopener">水木关站纪念</a> | <a href="https://web.archive.org/web/20200309033824/https://younggift.net/2013/03/15/blog-post_15-2/" target="_blank" rel="noopener">备份</a></p>
+<p><a href="http://blog.cathayan.org/item/1394" target="_blank" rel="noopener">纪念水木11周年</a> | <a href="https://web.archive.org/web/20200309033702/http://blog.cathayan.org/item/1394" target="_blank" rel="noopener">备份</a></p>
+<p><a href="https://holily.blogspot.com/2006/03/316.html?m=1" target="_blank" rel="noopener">316水木周年纪念</a> | <a href="https://web.archive.org/web/20200309034632/https://holily.blogspot.com/2006/03/316.html?m=1" target="_blank" rel="noopener">备份</a></p>
+<p><a href="https://terminus2049.github.io/1984bbs/%E8%87%AA%E7%94%B1%E6%96%B0%E9%97%BB%E7%A4%BE/2010/03/19/%E6%B0%B4%E6%9C%A8%E6%B8%85%E5%8D%8E-%E4%BA%8B%E4%BB%B65%E5%91%A8%E5%B9%B4.html" target="_blank" rel="noopener">“水木清华”事件5周年</a> | <a href="https://terminus2049.github.io/1984bbs/%E8%87%AA%E7%94%B1%E6%96%B0%E9%97%BB%E7%A4%BE/2010/03/19/%E6%B0%B4%E6%9C%A8%E6%B8%85%E5%8D%8E-%E4%BA%8B%E4%BB%B65%E5%91%A8%E5%B9%B4.html" target="_blank" rel="noopener">备份</a></p>
+<p><a href="http://blog.sina.com.cn/s/blog_4705a544010002qx.html" target="_blank" rel="noopener">水木清华周年祭－纪念水木清华414事件一周年</a> | [已截图]</p>
+<p><a href="https://www.yaohonglou.com/2006.04.06/14:00:00" target="_blank" rel="noopener">水木清华周年祭</a> | <a href="https://web.archive.org/web/20200309041629/https://www.yaohonglou.com/2006.04.06/14:00:00" target="_blank" rel="noopener">备份</a></p>
+<p><a href="https://web.archive.org/web/20110104115300/http://blog.ssfighter.com/2008/12/five-years-for-smth/" target="_blank" rel="noopener">水木，五年</a></p>
+<p><a href="https://www.ruanyifeng.com/blog/2005/03/post_108.html" target="_blank" rel="noopener">无法沉默</a> | <a href="https://web.archive.org/web/20200309131952/https://www.ruanyifeng.com/blog/2005/03/post_108.html" target="_blank" rel="noopener">备份</a></p>
+<p><a href="http://www.xys.org/~science/forum/db/2/103.html" target="_blank" rel="noopener">写在水木清华被阉割之后</a>| <a href="https://web.archive.org/web/20200309080527/http://www.xys.org/~science/forum/db/2/103.html" target="_blank" rel="noopener">备份</a></p>
+<p><a href="https://www.douban.com/photos/photo/241196965/" target="_blank" rel="noopener">那一天，我们把水木丢了</a> | <a href="https://web.archive.org/web/20200309044434/https://www.douban.com/photos/photo/241196965/" target="_blank" rel="noopener">备份</a></p>
+<p><a href="https://www.geek-share.com/detail/2322539360.html" target="_blank" rel="noopener">饶了水木吧</a> | <a href="https://web.archive.org/web/20200309073240/https://www.geek-share.com/detail/2322539360.html" target="_blank" rel="noopener">备份</a></p>
+<p><a href="https://smthbbs.blogspot.com/2005/03/newsfrom-phoenix-tv.html" target="_blank" rel="noopener">网罗天下关于SMTH报道全文</a> | <a href="https://web.archive.org/web/20200309040749/https://smthbbs.blogspot.com/2005/03/newsfrom-phoenix-tv.html" target="_blank" rel="noopener">备份1</a> | <a href="https://web.archive.org/web/20050324064500/http://www.phoenixtv.com/phoenixtv/74311627234607104/20050322/523048.shtml" target="_blank" rel="noopener">备份2</a></p>
+<p><a href="https://anonfiles.com/t6Id88g1od/_BBS_rmvb" target="_blank" rel="noopener">凤凰报道BBS压缩语音版</a></p>
+<p>互联网、性及其关系的主体建构 pdf</p>
+<hr>
+<h3 id="南京小百合BBS"><a href="#南京小百合BBS" class="headerlink" title="南京小百合BBS"></a>南京小百合BBS</h3><p><img src="https://upload.wikimedia.org/wikipedia/zh/a/ac/Xiaobaihe.JPG" alt=""></p>
+<p><a href="https://zh.wikipedia.org/zh/%E5%8D%97%E4%BA%AC%E5%A4%A7%E5%AD%A6%E5%B0%8F%E7%99%BE%E5%90%88BBS" target="_blank" rel="noopener">维基百科</a></p>
+<p><a href="https://web.archive.org/web/20001001000000*/http://bbs.nju.edu.cn" target="_blank" rel="noopener">互联网档案馆</a> | <a href="https://web.archive.org/web/20000830104947/http://bbs.nju.edu.cn/" target="_blank" rel="noopener">存档1</a> | <a href="https://web.archive.org/web/20030106105541/http://lilybbs.net/" target="_blank" rel="noopener">存档2</a> </p>
+<p><a href="https://www.doubleaf.com/2005/03/22/56" target="_blank" rel="noopener">小百合史记</a> | <a href="https://web.archive.org/web/20200309105654/https://www.doubleaf.com/2005/03/22/56" target="_blank" rel="noopener">备份</a></p>
+<p><a href="https://www.doubleaf.com/2005/03/22/49" target="_blank" rel="noopener">百合已死，有事烧纸</a> | <a href="https://web.archive.org/web/20200309124904/https://www.doubleaf.com/2005/03/22/49" target="_blank" rel="noopener">备份</a></p>
+<p><a href="https://hunterpan.wordpress.com/2008/10/15/南京大学-小百合-一段往事/" target="_blank" rel="noopener">南京大学 小百合 一段往事</a> | <a href="https://web.archive.org/web/20200309112848/https://hunterpan.wordpress.com/2008/10/15/%E5%8D%97%E4%BA%AC%E5%A4%A7%E5%AD%A6-%E5%B0%8F%E7%99%BE%E5%90%88-%E4%B8%80%E6%AE%B5%E5%BE%80%E4%BA%8B/" target="_blank" rel="noopener">备份</a></p>
+<p><a href="https://likeyesterday.wordpress.com/2005/03/25/〖转贴〗南京大学小百合bbs关站始末/" target="_blank" rel="noopener">南京大学小百合BBS关站始末</a> | <a href="https://web.archive.org/web/20200309113328/https://likeyesterday.wordpress.com/2005/03/25/%E3%80%96%E8%BD%AC%E8%B4%B4%E3%80%97%E5%8D%97%E4%BA%AC%E5%A4%A7%E5%AD%A6%E5%B0%8F%E7%99%BE%E5%90%88bbs%E5%85%B3%E7%AB%99%E5%A7%8B%E6%9C%AB/" target="_blank" rel="noopener">备份</a></p>
+<p><a href="https://zeeegeee.wordpress.com/2005/03/21/沉痛悼念南大小百合bbs/" target="_blank" rel="noopener">沉痛悼念南大小百合BBS</a> | <a href="https://web.archive.org/web/20200309123557/https://zeeegeee.wordpress.com/2005/03/21/%E6%B2%89%E7%97%9B%E6%82%BC%E5%BF%B5%E5%8D%97%E5%A4%A7%E5%B0%8F%E7%99%BE%E5%90%88bbs/" target="_blank" rel="noopener">备份</a></p>
+<p><a href="https://web.archive.org/web/20170425042245/http://www.suzhouren.net/network/1261.html" target="_blank" rel="noopener">兔死狐悲—-谨 纪念心中永远的那朵小百合</a></p>
+<p><a href="https://iamsettler.blogspot.com/2005/03/tom-blog_112937795018551887.html" target="_blank" rel="noopener">致“南京大学网络管理工作领导小组”的公开信</a> | <a href="https://archive.is/ZnpMT" target="_blank" rel="noopener">备份</a></p>
+<p><a href="https://web.archive.org/web/20090302050610/https://www.inmediahk.net/node/52713" target="_blank" rel="noopener">坦克過後，廣場一角，小百合正開</a></p>
+<p><a href="http://forum.xitek.com/thread-213677-2-1-1.html" target="_blank" rel="noopener">3月21日晚8点左右南大同学纪念照片</a> | <a href="https://archive.is/pAqRR" target="_blank" rel="noopener">备份</a> | <a href="https://archive.is/NpoQ5" target="_blank" rel="noopener">备份2</a></p>
+<hr>
+<h3 id="思想的境界"><a href="#思想的境界" class="headerlink" title="思想的境界"></a><a href="https://blog.boxun.com/sixiang/" target="_blank" rel="noopener">思想的境界</a></h3><p><a href="https://www.cuhk.edu.hk/ics/21c/media/articles/c063-200012017.pdf" target="_blank" rel="noopener">寫在《思想的境界》關站之後</a></p>
+<hr>
+<h3 id="世纪中国"><a href="#世纪中国" class="headerlink" title="世纪中国"></a>世纪中国</h3><p><a href="https://www.ruanyifeng.com/blog/2006/07/never_send_to_know_for_whom_the_bell_tolls.html" target="_blank" rel="noopener">《世纪中国》关於网站及论坛被关闭的三点声明</a> | <a href="https://web.archive.org/web/20190702042457/https://www.ruanyifeng.com/blog/2006/07/never_send_to_know_for_whom_the_bell_tolls.html" target="_blank" rel="noopener">备份</a></p>
+<hr>
+<h3 id="1984BBS"><a href="#1984BBS" class="headerlink" title="1984BBS"></a><a href="https://github.com/Terminus2049/1984bbs" target="_blank" rel="noopener">1984BBS</a></h3><p><img src="https://upload.wikimedia.org/wikipedia/zh/thumb/9/9d/1984bbs.jpg/320px-1984bbs.jpg" alt=""></p>
+<p><a href="https://zh.wikipedia.org/zh-hans/1984bbs" target="_blank" rel="noopener">维基百科</a></p>
+<p><a href="https://web.archive.org/web/20080415000000*/http://1984bbs.com" target="_blank" rel="noopener">互联网档案馆</a> </p>
+<p><a href="http://forums.internetfreedom.org/index.php?topic=5723.0" target="_blank" rel="noopener">1984bbs将关闭</a> | <a href="https://web.archive.org/web/20200310015535/http://forums.internetfreedom.org/index.php?topic=5723.0" target="_blank" rel="noopener">备份</a></p>
+<p><a href="https://web.archive.org/web/20200305053534/https://www.douban.com/note/94921919/" target="_blank" rel="noopener">纪念1984BBS</a></p>
+<p><a href="https://web.archive.org/web/20200305053058/https://www.douban.com/note/51651859/" target="_blank" rel="noopener">关于1984bbs。</a></p>
+<p><a href="https://web.archive.org/web/20200309135951/http://blog.alwayst.info/?p=1295" target="_blank" rel="noopener">1984bbs.com</a></p>
+<p><a href="http://blog.sina.com.cn/s/blog_49d0c08e0100mk62.html" target="_blank" rel="noopener">纪念1984BBS，感谢张书记</a> | [已截图]</p>
+<p><a href="https://chinadigitaltimes.net/chinese/2015/05/%E7%9F%A5%E4%B9%8E%E9%97%AE%E7%AD%94-1984bbs%E6%8C%82%E6%8E%89%E4%BB%A5%E5%90%8E-%E9%82%A3%E6%8B%A8%E7%94%A8%E6%88%B7%E9%83%BD%E8%B7%91%E5%93%AA%E5%84%BF%E5%8E%BB%E4%BA%86%EF%BC%9F/" target="_blank" rel="noopener">知乎问答 | 1984BBS挂掉以后 那拨用户都跑哪儿去了？</a> | <a href="https://archive.is/dMyBq" target="_blank" rel="noopener">备份</a></p>
+<p><a href="https://web.archive.org/web/20120528042055/http://ssnly100.blog.163.com/blog/static/11563392009101943955374/" target="_blank" rel="noopener">1984BBS大讲堂第一期：安总统谈“如何获取和报道新闻”  </a></p>
+<p><a href="https://web.archive.org/web/20120831211637/http://ssnly100.blog.163.com/blog/static/11563392009102591055614/" target="_blank" rel="noopener">1984BBS大讲堂第二期：网易新闻总监唐岩谈“网络新闻策划”</a></p>
+<hr>
+<p>如果说八十年代是通过实体（比如办杂志等）来表达理想主义，后八九时代早期是通过摇滚乐，那么随着科技的进步，在1994-2010年，BBS恰好成为了理想主义的重镇。从广场到网络公共空间，理想主义的星火一次又一次地熄灭，但是它不会绝迹，在宿舍，在出租屋，在高楼大厦，在书本上，在屏幕前，它依然存在，等到时机成熟，它还会再来的。</p>
+
+      
+    </div>
+    
+    
+    
+
+      <div>
+      
+        
+<div class="my_post_copyright">
+  <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+  
+  <!-- JS库 sweetalert 可修改路径 -->
+  <script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <p><span>本文标题:</span><a href="/2020/03/05/bbs/">BBS和网络公共空间</a></p>
+  <p><span>文章作者:</span><a href="/" title="访问 FKT 的个人博客">FKT</a></p>
+  <p><span>发布时间:</span>2020年03月05日 - 13:03</p>
+  <p><span>最后更新:</span>2020年03月12日 - 10:03</p>
+  <p><span>原始链接:</span><a href="/2020/03/05/bbs/" title="BBS和网络公共空间">https://freeknight.cf/2020/03/05/bbs/</a>
+    <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://freeknight.cf/2020/03/05/bbs/"  aria-label="复制成功！"></i></span>
+  </p>
+  <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者。</p>  
+</div>
+<script> 
+    var clipboard = new Clipboard('.fa-clipboard');
+      $(".fa-clipboard").click(function(){
+      clipboard.on('success', function(){
+        swal({   
+          title: "",   
+          text: '复制成功',
+          icon: "success", 
+          showConfirmButton: true
+          });
+        });
+    });  
+</script>
+
+      
+</div>
+      <div>
+  
+    <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-heart"></i>感谢您的阅读-------------</div>
+    
+</div>
+  
+</div>
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2020/02/19/wuningkun-translate-dylan-thomas/" rel="next" title="巫宁坤译迪伦·托马斯诗十二首">
+                <i class="fa fa-chevron-left"></i> 巫宁坤译迪伦·托马斯诗十二首
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2020/03/12/shenchangwen/" rel="prev" title="沈昌文 | 出于无能 —— 忆《读书》">
+                沈昌文 | 出于无能 —— 忆《读书》 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/abr.jpg"
+                alt="FKT" />
+            
+              <p class="site-author-name" itemprop="name">FKT</p>
+              <p class="site-description motion-element" itemprop="description">想象力比知识更重要</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">143</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">12</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/freeknightthinker" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:jackgzz001@gmail.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+            <div class="cc-license motion-element" itemprop="license">
+              <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" target="_blank">
+                <img src="/images/cc-by-nc-sa.svg" alt="Creative Commons" />
+              </a>
+            </div>
+          
+
+          
+          
+
+<iframe width="100%" height="100" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/123714278&color=%234285f4&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#BBS往事"><span class="nav-number">1.</span> <span class="nav-text">BBS往事</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#一塌糊涂BBS"><span class="nav-number">2.</span> <span class="nav-text">一塌糊涂BBS</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#南京小百合BBS"><span class="nav-number">3.</span> <span class="nav-text">南京小百合BBS</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#思想的境界"><span class="nav-number">4.</span> <span class="nav-text">思想的境界</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#世纪中国"><span class="nav-number">5.</span> <span class="nav-text">世纪中国</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1984BBS"><span class="nav-number">6.</span> <span class="nav-text">1984BBS</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">FKT</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: true,
+        appId: 'N3P4pr5DRzJKmO8WI1pTSRJ2-9Nh9j0Va',
+        appKey: 'XVbN32CBnPKj6aF6hsape4OX',
+        placeholder: 'ヾﾉ≧∀≦)o来啊，快活啊!',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
+<!-- 页面点击小红心 -->
+<script type="text/javascript" src="/js/src/love.js"></script>
